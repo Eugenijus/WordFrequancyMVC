@@ -1,4 +1,4 @@
-package info.eugenijus.wordfrequency;
+package info.eugenijus.wordfrequency.controllers;
 
 import java.text.DateFormat;
 import java.util.Date;

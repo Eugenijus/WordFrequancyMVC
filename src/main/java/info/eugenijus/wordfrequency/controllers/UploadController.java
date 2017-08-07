@@ -1,4 +1,4 @@
-package info.eugenijus.wordfrequency;
+package info.eugenijus.wordfrequency.controllers;
 
 /**
  * TODO THIS IS NOT FINISHED!
