@@ -3,6 +3,7 @@ package info.eugenijus.wordfrequency;
 public class App {
 
 	/**
+	 * TODO remake this so it is web app instead of console app
 	 * Functional requirements of the assignment
 	 *  <pre>
 	 *  1. Application should be capable of reading N text files 
