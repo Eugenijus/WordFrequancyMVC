@@ -28,7 +28,7 @@ public class WordFrequency {
 	 * reads that file and returns it as a String
 	 * @param filename - String object with filename
 	 */
-	public String readFile(String filename) {		
+	public synchronized String readFile(String filename) {		
 		StringBuilder sb = new StringBuilder();
 		try (BufferedReader br = new BufferedReader(
 					new FileReader(Constants.FOLDER+"/"+filename))) {
@@ -51,7 +51,7 @@ public class WordFrequency {
 		return sb.toString();
 	}
 	
-	public boolean writeFile(String filename, Map<String, Integer> data) {
+	public synchronized boolean writeFile(String filename, Map<String, Integer> data) {
 		boolean successfull = false;
 		try(BufferedWriter writer = new BufferedWriter(new FileWriter(Constants.FOLDER+"/"+filename))){
 			writer.write(data.toString());
@@ -193,7 +193,7 @@ public class WordFrequency {
 		return filename_tmp.toString();
 	}
 	
-	public boolean splitResultIntoFiles(String filename, List<Map<String, Integer>> result_maps) {
+	public synchronized boolean splitResultIntoFiles(String filename, List<Map<String, Integer>> result_maps) {
 		boolean successfull = true;
 		for (int i = 0; i < Constants.FILE_APPENDIXES.length; i++) {
 			if(result_maps.get(i) != null && result_maps.get(i).size() > 0) {
