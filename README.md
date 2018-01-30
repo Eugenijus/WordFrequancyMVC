@@ -1,8 +1,9 @@
 # WordFrequancyMVC
+
+THIS IS STILL WORK IN PROGRESS
+
+-----------
 word-frequency-mvc-exercise
-
-Ths is still Work in Progress.
-
 
 Here I will publish a programming exercise solution for a word frequency problem.
 
